@@ -61,35 +61,32 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-.service h2, .service h3 {
-    color: #333333;
-    border-bottom: 1px solid #dddddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-weight: normal;
+/* Contact Content Styles */
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.service p, .service ul {
-    margin: 15px 0;
-    color: #555555;
+.contact-info {
+    flex: 1;
 }
 
-ul {
-    padding-left: 20px;
+/* Profile Photo Styles */
+.profile-photo {
+    width: 120px; /* 圖片容器的寬度 */
+    height: 120px; /* 圖片容器的高度 */
+    border-radius: 50%; /* 圓形效果 */
+    overflow: hidden; /* 確保內容不超出圓形 */
+    flex-shrink: 0; /* 防止圖片縮小 */
+    border: 2px solid #ddd; /* 圓形外邊框 */
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-/* QR Code Styles */
-.qr-code {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.qr-code img {
-    width: 150px;
+.profile-photo img {
+    width: 100%; /* 確保圖片填滿容器 */
+    height: 100%; /* 確保圖片填滿容器 */
+    object-fit: cover; /* 保持圖片比例，填滿容器 */
 }
 
 /* Footer Styles */
@@ -104,79 +101,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header p {
-        font-size: 0.9em;
-    }
-
-    nav {
-        display: flex;
+    .contact-content {
         flex-direction: column;
-        padding: 10px 0;
+        align-items: center;
     }
 
-    nav a {
-        margin: 10px 0;
-        font-size: 0.9em;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-
-    .service h2, .service h3 {
-        font-size: 1.2em;
-    }
-
-    .service p, .service ul {
-        font-size: 0.9em;
-    }
-
-    ul {
-        padding-left: 15px;
-    }
-
-    footer {
-        font-size: 0.8em;
-        padding: 15px;
-    }
-
-    .qr-code img {
-        width: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header p {
-        font-size: 0.8em;
-    }
-
-    nav a {
-        font-size: 0.8em;
-    }
-
-    .service h2, .service h3 {
-        font-size: 1.1em;
-    }
-
-    .qr-code img {
-        width: 100px;
-    }
-}
-
-@media (max-width: 320px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-
-    .service h2, .service h3 {
-        font-size: 1em;
+    .profile-photo {
+        margin-bottom: 20px;
     }
 }
