@@ -170,3 +170,13 @@ footer {
         width: 100px;
     }
 }
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .service h2, .service h3 {
+        font-size: 1em;
+    }
+}
