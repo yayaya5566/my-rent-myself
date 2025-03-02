@@ -8,5 +8,6 @@ function showPaymentInstructions() {
 
 // Add event listeners (if needed in the future)
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded. Ready to add interactive features!');
+    console.log('Adsense script initialized.');
+    (adsbygoogle = window.adsbygoogle || []).push({});
 });
